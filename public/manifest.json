@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Side panel extension",
+  "version": "1.0",
+  "description": "Extension with a default side panel.",
+  // "icons": {
+  //   "16": "images/icon-16.png",
+  //   "48": "images/icon-48.png",
+  //   "128": "images/icon-128.png"
+  // },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "permissions": ["scripting", "activeTab"]
+}
