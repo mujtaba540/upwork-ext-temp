@@ -4,14 +4,15 @@
   "version": "1.0",
   "description": "Extension with a default side panel.",
   "action": {
-    "default_popup": "index.html"
+    // "default_popup": "index.html"
   },
   "side_panel": {
-    "default_path": "index.html"
+    "default_path": "index.html",
+    "openPanelOnActionClick": true
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "service-worker.js"
   },
   "host_permissions": ["http://*/*", "https://*/*"],
-  "permissions": ["scripting", "activeTab", "tabs"]
+  "permissions": ["scripting", "activeTab", "tabs", "sidePanel"]
 }
